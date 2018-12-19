@@ -11,8 +11,6 @@ before_script:
 
 script:
   - ng build --prod
-  - sonar-scanner.bat -D"sonar.projectKey=carolynrehm_angular-test" -D"sonar.organization=carolynrehm-github" -D"sonar.sources=." -D"sonar.host.url=https://sonarcloud.io" -D"sonar.login=970a60895014d1d121ec7abc57209fde4ace633d"
-
 
 addons:
   sonarcloud:
@@ -20,5 +18,4 @@ addons:
     token:
       secure: SONAR_TOKEN
 script:
-  # other script steps might be done before running the actual analysis
   - sonar-scanner
