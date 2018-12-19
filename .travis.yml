@@ -11,3 +11,10 @@ before_script:
 
 script:
   - ng build --prod
+
+
+addons:
+  sonarcloud:
+    organization: carolynrehm-github
+    token:
+      secure: SONAR_TOKEN
