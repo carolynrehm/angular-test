@@ -10,7 +10,7 @@ jobs:
           command: npm install
       - run:
           name: Downloading Angular
-          command: npm install -g @angular/cli
+          command: npm install @angular/cli
       - run:
           name: Building Angular Application
           command: ng build --prod
