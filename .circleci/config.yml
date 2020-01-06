@@ -16,4 +16,4 @@ jobs:
           command: ng build --prod
       - run:
           name: Run Sonar Analysis
-          command: npm run sonar 
+          command: sudo npm run sonar 
