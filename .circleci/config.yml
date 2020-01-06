@@ -10,7 +10,7 @@ jobs:
           command: npm install
       - run:
           name: Downloading Angular
-          command: y | sudo npm install -g @angular/cli
+          command: echo y | sudo npm install -g @angular/cli
       - run:
           name: Building Angular Application
           command: ng build --prod
